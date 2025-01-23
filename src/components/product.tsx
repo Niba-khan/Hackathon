@@ -1,15 +1,17 @@
 'use client'
 import React, { useState, useEffect } from "react";
-import CreateClient from "@sanity/client";
+import { createClient } from "@sanity/client";
 import Image from "next/image";
 import Link from "next/link";
 
-const sanity = CreateClient({
+const sanity = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: "production",
-  apiVersion: "2023-01-01",
+  dataset: 'production',
+  apiVersion: '2023-01-01',
   useCdn: true,
+  token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
 });
+
 
 interface Product {
   _id: string;

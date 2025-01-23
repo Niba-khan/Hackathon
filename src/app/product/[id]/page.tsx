@@ -3,7 +3,8 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import ProductClient from "@components/productclient";
-import { client } from "../../../sanity/lib/client";
+import client from "../../../sanity/lib/client";
+
 
 // Define the type for the product
 interface Product {
