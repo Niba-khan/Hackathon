@@ -1,5 +1,5 @@
+import { client } from "../../../sanity/lib/client";
 import { NextResponse } from "next/server";
-import client from "../../../sanity/lib/client";
 
 // This API route fetches product data from Sanity CMS and returns it as a JSON response.
 export async function GET() {
