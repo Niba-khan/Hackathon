@@ -1,26 +1,27 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"],  // Supports modern JavaScript and DOM features.
+    "allowJs": true,                          // Allows JavaScript files in the project.
+    "skipLibCheck": true,                     // Skips type checking of declaration files for faster builds.
+    "strict": true,                           // Enables all strict type-checking options.
+    "noEmit": true,                           // Disables emitting files from TypeScript compiler.
+    "esModuleInterop": true,                  // Ensures compatibility with CommonJS and ES modules.
+    "module": "esnext",                       // Uses ES modules.
+    "moduleResolution": "bundler",           // Resolves modules optimized for bundlers like Webpack.
+    "resolveJsonModule": true,                // Allows importing JSON files.
+    "isolatedModules": true,                  // Ensures each file can be transpiled in isolation.
+    "jsx": "preserve",                        // Preserves JSX in the output for further processing by Babel/Next.js.
+    "incremental": true,                      // Enables incremental builds for faster recompilations.
     "plugins": [
       {
-        "name": "next"
+        "name": "next"                        // Adds Next.js-specific type checking and tooling.
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@components/*": ["./src/components/*"] // Alias for the components directory.
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Files to include.
+  "exclude": ["node_modules"]                  // Files to exclude.
 }
+
