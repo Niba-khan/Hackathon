@@ -9,7 +9,7 @@ import { client } from "../../../sanity/lib/client";
 interface Product {
   id: string; // Updated to match the ProductClient prop
   title: string;
-  description: string;
+    description: string;
   price: number;
   discountPercentage: number;
   isNew: boolean;
