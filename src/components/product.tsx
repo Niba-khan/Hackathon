@@ -22,7 +22,7 @@ interface Product {
   };
 }
 
-const Products: React.FC = () => {
+const Product: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [isClient, setIsClient] = useState(false); // Track if it's client-side
 
@@ -84,4 +84,4 @@ const Products: React.FC = () => {
   );
 };
 
-export default Products;
+export default Product;
